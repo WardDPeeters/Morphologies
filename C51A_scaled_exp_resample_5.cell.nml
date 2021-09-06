@@ -1249,7 +1249,7 @@
                 <parent segment="310"/>
                 <distal x="-3.260196e+00" y="6.306050e+01" z="8.622848e+01" diameter="1.52"/>
             </segment>
-            <segmentGroup id="Cable_1">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_1">
                 <member segment="57"/>
                 <member segment="66"/>
                 <member segment="74"/>
@@ -1258,7 +1258,7 @@
                 <member segment="103"/>
                 <member segment="113"/>
             </segmentGroup>
-            <segmentGroup id="Cable_2">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_2">
                 <member segment="34"/>
                 <member segment="40"/>
                 <member segment="47"/>
@@ -1272,7 +1272,7 @@
                 <member segment="120"/>
                 <member segment="125"/>
             </segmentGroup>
-            <segmentGroup id="Cable_3">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_3">
                 <member segment="55"/>
                 <member segment="63"/>
                 <member segment="73"/>
@@ -1284,7 +1284,7 @@
                 <member segment="128"/>
                 <member segment="135"/>
             </segmentGroup>
-            <segmentGroup id="Cable_4">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_4">
                 <member segment="56"/>
                 <member segment="64"/>
                 <member segment="69"/>
@@ -1299,7 +1299,7 @@
                 <member segment="144"/>
                 <member segment="151"/>
             </segmentGroup>
-            <segmentGroup id="Cable_5">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_5">
                 <member segment="78"/>
                 <member segment="85"/>
                 <member segment="92"/>
@@ -1317,7 +1317,7 @@
                 <member segment="188"/>
                 <member segment="195"/>
             </segmentGroup>
-            <segmentGroup id="Cable_6">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_6">
                 <member segment="10"/>
                 <member segment="15"/>
                 <member segment="21"/>
@@ -1352,10 +1352,10 @@
                 <member segment="217"/>
                 <member segment="221"/>
             </segmentGroup>
-            <segmentGroup id="Cable_7">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_7">
                 <member segment="5"/>
             </segmentGroup>
-            <segmentGroup id="Cable_8">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_8">
                 <member segment="99"/>
                 <member segment="108"/>
                 <member segment="117"/>
@@ -1387,7 +1387,7 @@
                 <member segment="258"/>
                 <member segment="259"/>
             </segmentGroup>
-            <segmentGroup id="Cable_9">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_9">
                 <member segment="100"/>
                 <member segment="109"/>
                 <member segment="122"/>
@@ -1423,7 +1423,7 @@
                 <member segment="272"/>
                 <member segment="275"/>
             </segmentGroup>
-            <segmentGroup id="Cable_10">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_10">
                 <member segment="81"/>
                 <member segment="89"/>
                 <member segment="95"/>
@@ -1467,7 +1467,7 @@
                 <member segment="289"/>
                 <member segment="291"/>
             </segmentGroup>
-            <segmentGroup id="Cable_11">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_11">
                 <member segment="19"/>
                 <member segment="24"/>
                 <member segment="28"/>
@@ -1543,28 +1543,28 @@
                 <member segment="310"/>
                 <member segment="311"/>
             </segmentGroup>
-            <segmentGroup id="Cable_12">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_12">
                 <member segment="4"/>
                 <member segment="9"/>
                 <member segment="14"/>
             </segmentGroup>
-            <segmentGroup id="Cable_13">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_13">
                 <member segment="0"/>
             </segmentGroup>
-            <segmentGroup id="Cable_14">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_14">
                 <member segment="1"/>
             </segmentGroup>
-            <segmentGroup id="Cable_15">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_15">
                 <member segment="18"/>
                 <member segment="23"/>
                 <member segment="29"/>
             </segmentGroup>
-            <segmentGroup id="Cable_16">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_16">
                 <member segment="3"/>
                 <member segment="8"/>
                 <member segment="13"/>
             </segmentGroup>
-            <segmentGroup id="Cable_17">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_17">
                 <member segment="11"/>
                 <member segment="16"/>
                 <member segment="20"/>
@@ -1574,21 +1574,21 @@
                 <member segment="43"/>
                 <member segment="48"/>
             </segmentGroup>
-            <segmentGroup id="Cable_18">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_18">
                 <member segment="2"/>
                 <member segment="6"/>
             </segmentGroup>
-            <segmentGroup id="Cable_19">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_19">
                 <member segment="35"/>
                 <member segment="42"/>
                 <member segment="49"/>
             </segmentGroup>
-            <segmentGroup id="Cable_20">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_20">
                 <member segment="54"/>
                 <member segment="61"/>
                 <member segment="68"/>
             </segmentGroup>
-            <segmentGroup id="Cable_21">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_21">
                 <member segment="17"/>
                 <member segment="22"/>
                 <member segment="27"/>
@@ -1601,7 +1601,7 @@
                 <member segment="77"/>
                 <member segment="88"/>
             </segmentGroup>
-            <segmentGroup id="Cable_22">
+            <segmentGroup neuroLexId="sao864921383" id="Cable_22">
                 <member segment="7"/>
                 <member segment="12"/>
             </segmentGroup>
@@ -1629,8 +1629,8 @@
                 <include segmentGroup="Cable_21"/>
                 <include segmentGroup="Cable_22"/>
             </segmentGroup>
-            <segmentGroup id="all_dend"/>
-            <segmentGroup id="all_soma">
+            <segmentGroup neuroLexId="GO:0030425" id="all_dend"/>
+            <segmentGroup neuroLexId="GO:0043025" id="all_soma">
                 <include segmentGroup="Cable_7"/>
                 <include segmentGroup="Cable_12"/>
                 <include segmentGroup="Cable_13"/>
@@ -1639,7 +1639,7 @@
                 <include segmentGroup="Cable_18"/>
                 <include segmentGroup="Cable_22"/>
             </segmentGroup>
-            <segmentGroup id="all_axon">
+            <segmentGroup neuroLexId="GO:0030424" id="all_axon">
                 <include segmentGroup="Cable_1"/>
                 <include segmentGroup="Cable_2"/>
                 <include segmentGroup="Cable_3"/>
