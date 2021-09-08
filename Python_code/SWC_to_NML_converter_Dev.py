@@ -20,6 +20,10 @@ A few messages of how to use:
 3. Be sure to put the cell ID of your cell at the start of your file name, 
    separated from the rest of the file name by an underscore (_).
    Also be sure to not include any periods (.) in the file name besides for the .swc filetype indicator.
+---
+4. For people trying to read and understand the code, I'm sorry in advance :]
+   I would recommend the function to start with to be the function 'construct_nml'.
+   Any questions regarding the code? Feel free to reach out.
 
 '''
 print("Ready")
@@ -208,6 +212,13 @@ def open_and_split(path):
 
 def construct_nml(d, cell_ID, filename):
     
+    '''
+    
+    This function is the leading function! This function is the one that manages all the other functions, and which gives directions to the program.
+    To understand the code, understanding the general process of conversion is needed - this function is the one to look at.
+    
+    '''
+
     generic_file_name = filename.split('.')[0]
     nml_doc = neuroml.NeuroMLDocument(id="%s" %generic_file_name)
     nml_cell = neuroml.Cell(id="%s" %cell_ID)
@@ -218,7 +229,7 @@ def construct_nml(d, cell_ID, filename):
     nml_cell = process_cables(segmentGroups,type_seg,nml_mor,nml_cell)
     nml_cell = define_biophysical_properties(nml_cell,cell_ID)
     nml_doc.cells.append(nml_cell)
-    nml_file = generic_file_name + '.cell.nml'
+    nml_file = generic_file_name + '_converted.cell.nml'
     writers.NeuroMLWriter.write(nml_doc, nml_file)
     print_statistics(d, segmentGroups)
     
@@ -461,7 +472,7 @@ def adjustSegmentGroups(loop, segmentGroups, children,d):
             loopfound = True
     # loop = loopnew
     
-    # available = loopnew # loop is interconnected with available and idk whyyyyyy :[]
+    # available = loopnew # loop is interconnected with available and idk why :(
     
     for segment in loopnew:
         loop.append(segment)
@@ -489,7 +500,7 @@ def adjustSegmentGroups(loop, segmentGroups, children,d):
                 if chh not in loop:
                     available.append(chh)
                     # print("Appended %s since %s was gone." %(chh,to_check)) 
-            # print("Annndondidit")
+            # print("Done")
         available.remove(to_check)
         if available == []:
             fully_adjusted = True
@@ -882,8 +893,7 @@ def print_statistics(d, segmentGroups):
 # In[98]:
 
 
-swc_file = 'Case3_orig.swc' # Insert the path of the swc-file here
-# swc_file = 'Proxy_loop_test.swc'
+swc_file = '' # Insert the path of the swc-file here
 nml_file_name = convert_to_nml(swc_file)
 print('Converted the following file: %s' %nml_file_name)
 
