@@ -9,7 +9,8 @@
 BEFORE USING THIS PROGRAM
 A few messages of how to use:
 
-1. Make sure to change the paths in the 'main' piece of the code to the desired folder/file.
+1. Make sure to change line 904 to contain your desired filepath, linking to the swc file to be converted.
+
 ---
 2. Make sure that there are no comments on any same line as data in the file; only comments that start a new line with
 #[This is a comment]
@@ -216,6 +217,13 @@ def construct_nml(d, cell_ID, filename):
     
     This function is the leading function! This function is the one that manages all the other functions, and which gives directions to the program.
     To understand the code, understanding the general process of conversion is needed - this function is the one to look at.
+
+    First; we need to identify key points in the morphology, being; the soma, branchpoints (where branches split into more), and leaves (final segments to a branch).
+    The soma has multiple ways of being encoded in an swc file; we first need to fix the morphology dictionary to eliminate this factor.
+    Then, from each of those non-soma key points, we move towards the soma until we hit either the soma or another branch point. This leaves us with "linear" segmentGroups.
+    After this, we can use those segmentGroups to define the cell morphology, but we need to take into account mistakes in the morphology (circular branches for example).
+    This is also done automatically by the code.
+    Finally, we need to give the cell some basic biophysical parameters.
     
     '''
 
