@@ -1,0 +1,69 @@
+<neuroml xmlns="http://www.neuroml.org/schema/neuroml2"  xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.neuroml.org/schema/neuroml2 https://raw.github.com/NeuroML/NeuroML2/development/Schemas/NeuroML2/NeuroML_v2.1.xsd" id="Case3_orig">
+    <cell id="Case3">
+        <morphology id="Case3_morphology">
+            <segment id="0" name="Comp_0">
+                <proximal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="20.326313239628536"/>
+                <distal x="0.000000e+00" y="0.000000e+00" z="0.000000e+00" diameter="20.326313239628536"/>
+            </segment>
+            <segment id="1" name="Comp_1">
+                <parent segment="0"/>
+                <distal x="0.000000e+00" y="1.016316e+01" z="0.000000e+00" diameter="20.326313239628536"/>
+            </segment>
+            <segment id="2" name="Comp_2">
+                <parent segment="0"/>
+                <distal x="0.000000e+00" y="-1.016316e+01" z="0.000000e+00" diameter="20.326313239628536"/>
+            </segment>
+            <segment id="3" name="Comp_3">
+                <parent segment="0"/>
+                <distal x="1.000000e+01" y="0.000000e+00" z="0.000000e+00" diameter="4.0"/>
+            </segment>
+            <segment id="4" name="Comp_4">
+                <parent segment="3"/>
+                <distal x="2.000000e+01" y="0.000000e+00" z="0.000000e+00" diameter="4.0"/>
+            </segment>
+            <segment id="5" name="Comp_5">
+                <parent segment="4"/>
+                <distal x="3.000000e+01" y="0.000000e+00" z="0.000000e+00" diameter="4.0"/>
+            </segment>
+            <segmentGroup neuroLexId="sao864921383" id="Cable_1">
+                <member segment="1"/>
+            </segmentGroup>
+            <segmentGroup neuroLexId="sao864921383" id="Cable_2">
+                <member segment="2"/>
+            </segmentGroup>
+            <segmentGroup neuroLexId="sao864921383" id="Cable_3">
+                <member segment="3"/>
+                <member segment="4"/>
+                <member segment="5"/>
+            </segmentGroup>
+            <segmentGroup neuroLexId="sao864921383" id="Cable_4">
+                <member segment="0"/>
+            </segmentGroup>
+            <segmentGroup id="all">
+                <include segmentGroup="Cable_1"/>
+                <include segmentGroup="Cable_2"/>
+                <include segmentGroup="Cable_3"/>
+                <include segmentGroup="Cable_4"/>
+            </segmentGroup>
+            <segmentGroup neuroLexId="GO:0030425" id="all_dend">
+                <include segmentGroup="Cable_3"/>
+            </segmentGroup>
+            <segmentGroup neuroLexId="GO:0043025" id="all_soma">
+                <include segmentGroup="Cable_1"/>
+                <include segmentGroup="Cable_2"/>
+                <include segmentGroup="Cable_4"/>
+            </segmentGroup>
+            <segmentGroup neuroLexId="GO:0030424" id="all_axon"/>
+        </morphology>
+        <biophysicalProperties id="Case3_properties">
+            <membraneProperties>
+                <spikeThresh value="0.0 mV"/>
+                <specificCapacitance value="1.0 uF_per_cm2"/>
+                <initMembPotential value="-60.0 mV"/>
+            </membraneProperties>
+            <intracellularProperties>
+                <resistivity value="0.03 kohm_cm"/>
+            </intracellularProperties>
+        </biophysicalProperties>
+    </cell>
+</neuroml>
